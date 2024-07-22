@@ -1,0 +1,112 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2563a1;
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Active link color in navbar */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #737d88;
+    background-color: #435669;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 15px;
+}
+
+/* Intro section styles */
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Title styles */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6d8fb0;
+}
+
+/* Accordion button styles */
+.accordion-button {
+    background-color: #424a51;
+    border-color: #dee2e6;
+    color: #343e47;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Active accordion button styles */
+.accordion-button:not(.collapsed) {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #343a40;
+}
+
+/* Accordion button arrow rotation */
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+/* Accordion button hover styles */
+.accordion-button:hover {
+    background-color: #a8c1da;
+    color: #8497a9;
+}
+
+/* Accordion body styles */
+.accordion-body {
+    background-color: #aea2a2;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Paragraph styles inside accordion body */
+.accordion-body p {
+    margin-bottom: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e9ebed;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 1s forwards;
+}
+
+/* Footer animation */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .intro {
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}

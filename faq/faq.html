@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style untuk Judul Intro */
+        .intro .title {
+            font-size: 2.5rem; /* Ukuran font yang lebih besar untuk judul */
+            font-weight: bold;
+        }
+
+        /* Style untuk Button Accordion */
+        .accordion-button {
+            font-size: 1.1rem; /* Ukuran font button accordion */
+        }
+
+        /* Style untuk Teks di Accordion */
+        .accordion-body {
+            font-size: 1rem; /* Ukuran font untuk teks di body accordion */
+            color: white; /* Mengubah warna teks menjadi putih */
+        }
+
+        /* Style untuk Footer */
+        footer {
+            font-size: 0.9rem; /* Ukuran font yang lebih kecil untuk footer */
+        }
+
+        footer .text-uppercase {
+            font-size: 1.1rem; /* Ukuran font untuk heading di footer */
+        }
+    </style>
+    <title>FAQ</title>
+</head>
+
+<body>
+    <!-- Nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../news/news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../portfolio/portofolio.html">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Finish -->
+
+    <!-- Content Start -->
+    <div class="container my-5">
+        <div class="intro text-center mb-4">
+            <p class="title">Pertanyaan yang Sering Ditanyakan</p>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Apa jenis layanan penulisan yang Anda tawarkan?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Saya menawarkan berbagai layanan penulisan, termasuk artikel, blog post, konten website, cerita pendek, esai, dan penulisan e-book.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Bagaimana cara memesan layanan penulisan?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Anda dapat menghubungi saya melalui email atau formulir kontak di situs web ini, menjelaskan kebutuhan Anda, dan saya akan memberikan informasi lebih lanjut tentang prosesnya.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Waktu penyelesaian proyek bervariasi tergantung pada kompleksitas dan panjangnya. Biasanya, saya menyelesaikan proyek dalam 1-2 minggu.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Apakah Anda menerima revisi?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Ya, saya menerima revisi untuk memastikan bahwa hasil akhir sesuai dengan harapan Anda. Revisi termasuk dalam biaya layanan.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Apa yang membedakan Anda dari penulis lain?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Saya berkomitmen untuk memberikan konten berkualitas tinggi dengan perhatian terhadap detail dan tenggat waktu. Saya juga memastikan bahwa setiap tulisan disesuaikan dengan kebutuhan dan gaya Anda.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Apakah Anda menerima kolaborasi?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Ya, saya terbuka untuk kolaborasi. Silakan hubungi saya untuk berkolaborasi.
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Bagaimana harga layanan penulisan Anda?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Jawaban:</strong> Harga layanan penulisan bervariasi tergantung pada jenis dan kompleksitas proyek. Saya akan memberikan penawaran yang adil dan kompetitif berdasarkan kebutuhan Anda.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Finish -->
+
+    <!-- Footer Start -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Portofolio</h5>
+                    <p>Menunjukkan keterampilan dan memberikan gambaran yang jelas tentang kemampuan saya untuk memenuhi berbagai kebutuhan penulisan serta untuk membangun kepercayaan dengan klien potensial.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="../index.html" class="text-dark">Home</a></li>
+                        <li><a href="../news/news.html" class="text-dark">News</a></li>
+                        <li><a href="../portfolio/portofolio.html" class="text-dark">Portofolio</a></li>
+                        <li><a href="../about/about.html" class="text-dark">About</a></li>
+                        <li><a href="../faq/faq.html" class="text-dark">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="mailto:nayla@example.com" class="text-dark">@naylasbhni</a></li>
+                        <li><a href="https://wa.me/62" class="text-dark">+628811375200</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2024 Nayla Sabhani
+        </div>
+    </footer>
+    <!-- Footer Finish -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

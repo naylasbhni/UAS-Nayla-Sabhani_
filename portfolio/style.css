@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 15px;
+}
+
+.navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand, .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ff6a3d;
+}
+
+.jumbotron {
+    animation: fadeInUp 2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-success {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f7f7f7;
+    color: #222;
+    padding: 24px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    animation: cardFadeIn 1s ease-out;
+}
+
+.card:hover {
+    background-color: #eaf0f6;
+    transform: scale(1.03);
+    box-shadow: 2px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    padding: 4px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+footer {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 1s forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 20px;
+    }
+
+    .img-fluid {
+        width: 70%;
+    }
+
+    .container {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-success {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
